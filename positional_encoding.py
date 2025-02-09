@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import math
 
+# Source: https://medium.com/towards-data-science/build-your-own-transformer-from-scratch-using-pytorch-84c850470dcb
+
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, max_seq_length):
         """
