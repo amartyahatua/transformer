@@ -4,6 +4,8 @@ from positional_encoding import PositionalEncoding
 from encoder_layer import EncoderLayer
 from decoder_layer import DecoderLayer
 
+# Source: https://medium.com/towards-data-science/build-your-own-transformer-from-scratch-using-pytorch-84c850470dcb
+
 class Transformer(nn.Module):
     def __init__(self, src_vocab_size, tgt_vocab_size, d_model, num_heads, num_layers, d_ff, max_seq_length, dropout):
         super(Transformer, self).__init__()

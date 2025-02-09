@@ -2,6 +2,8 @@ import torch.nn as nn
 from multihead_attention import MultiHeadAttention
 from positionwise_feedforward import PositionWiseFeedForward
 
+# Source: https://medium.com/towards-data-science/build-your-own-transformer-from-scratch-using-pytorch-84c850470dcb
+
 class DecoderLayer(nn.Module):
     def __init__(self, d_model, num_heads, d_ff, dropout):
         super(DecoderLayer, self).__init__()
